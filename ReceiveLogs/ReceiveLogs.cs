@@ -14,6 +14,7 @@ namespace ReceiveLogs
             using var channel = connection.CreateModel();
 
             channel.ExchangeDeclare(exchange: "logs", type: ExchangeType.Fanout);
+
             string queueName = channel.QueueDeclare().QueueName;
             channel.QueueBind(queue: queueName,
                               exchange: "logs",

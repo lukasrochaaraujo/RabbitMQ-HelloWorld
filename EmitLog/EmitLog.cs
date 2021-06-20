@@ -14,8 +14,8 @@ namespace EmitLog
 
             channel.ExchangeDeclare(exchange: "logs", type: ExchangeType.Fanout);
 
-            var message = GetMessage(args);
-            var body = Encoding.UTF8.GetBytes(message);
+            string message = GetMessage(args);
+            byte[] body = Encoding.UTF8.GetBytes(message);
 
             channel.BasicPublish(exchange: "logs",
                                  routingKey: "",
