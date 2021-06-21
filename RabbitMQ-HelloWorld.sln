@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Send", "Send\Send.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Worker", "Worker\Worker.csproj", "{3F95AAC7-ECE0-4CCB-A571-A6E871C2CB4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitLog", "EmitLog\EmitLog.csproj", "{198605DD-E87D-44D1-BDDF-85CEAF7D3755}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmitLog", "EmitLog\EmitLog.csproj", "{198605DD-E87D-44D1-BDDF-85CEAF7D3755}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveLogs", "ReceiveLogs\ReceiveLogs.csproj", "{BD124D05-BB4E-4D7F-A937-37DCEFF6F527}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiveLogs", "ReceiveLogs\ReceiveLogs.csproj", "{BD124D05-BB4E-4D7F-A937-37DCEFF6F527}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tutorial01_Introduction", "Tutorial01_Introduction", "{FFDB0080-690F-4E6A-BA6C-FFFFB5CFAE54}"
 EndProject
@@ -23,9 +23,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tutorial03_Exchange", "Tuto
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tutorial04_Routing", "Tutorial04_Routing", "{3202BDE2-8DA9-44F9-9C99-249C2FF14EB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitLogDirect", "EmitLogDirect\EmitLogDirect.csproj", "{F86711EE-2139-4A62-8137-37DA41EAFB08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmitLogDirect", "EmitLogDirect\EmitLogDirect.csproj", "{F86711EE-2139-4A62-8137-37DA41EAFB08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveLogsDirect", "ReceiveLogsDirect\ReceiveLogsDirect.csproj", "{8A27A8CA-B4DA-455A-A30D-A0A2B7AC8305}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiveLogsDirect", "ReceiveLogsDirect\ReceiveLogsDirect.csproj", "{8A27A8CA-B4DA-455A-A30D-A0A2B7AC8305}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tutorial05_Topics", "Tutorial05_Topics", "{C9544A57-0CCD-4842-A8DA-0B4A8EFA1C87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitLogTopic", "EmitLogTopic\EmitLogTopic.csproj", "{9EA72BF4-0930-43C9-B511-666A3AAE8AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveLogsTopic", "ReceiveLogsTopic\ReceiveLogsTopic.csproj", "{44C44D12-EF5F-4DF5-A295-669CDDF36544}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +71,14 @@ Global
 		{8A27A8CA-B4DA-455A-A30D-A0A2B7AC8305}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A27A8CA-B4DA-455A-A30D-A0A2B7AC8305}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A27A8CA-B4DA-455A-A30D-A0A2B7AC8305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA72BF4-0930-43C9-B511-666A3AAE8AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA72BF4-0930-43C9-B511-666A3AAE8AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA72BF4-0930-43C9-B511-666A3AAE8AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA72BF4-0930-43C9-B511-666A3AAE8AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C44D12-EF5F-4DF5-A295-669CDDF36544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C44D12-EF5F-4DF5-A295-669CDDF36544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C44D12-EF5F-4DF5-A295-669CDDF36544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C44D12-EF5F-4DF5-A295-669CDDF36544}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +92,8 @@ Global
 		{BD124D05-BB4E-4D7F-A937-37DCEFF6F527} = {BDD9FC3D-5EAF-4152-A731-42C6AF719786}
 		{F86711EE-2139-4A62-8137-37DA41EAFB08} = {3202BDE2-8DA9-44F9-9C99-249C2FF14EB3}
 		{8A27A8CA-B4DA-455A-A30D-A0A2B7AC8305} = {3202BDE2-8DA9-44F9-9C99-249C2FF14EB3}
+		{9EA72BF4-0930-43C9-B511-666A3AAE8AF8} = {C9544A57-0CCD-4842-A8DA-0B4A8EFA1C87}
+		{44C44D12-EF5F-4DF5-A295-669CDDF36544} = {C9544A57-0CCD-4842-A8DA-0B4A8EFA1C87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4E0B10FF-2CB0-4471-B07D-F3E810643CD2}
